@@ -1,3 +1,34 @@
+# Example enum
+
+export enum STATUS {
+  ACTIVE,
+  AWAITING_REVIEW,
+  CLOSED,
+  COMPLETE,
+  DRAFT,
+  IN_PROCESS,
+  IN_REVIEW,
+  NOT_STARTED,
+  PENDING_RESOLUTION,
+  REJECTED
+};
+
+# Hanle enum
+
+private handleEnumWithMap(): void {
+    const _key: string = STATUS[STATUS.ACTIVE];
+    const _displayKey: string = STATUS_LABLE.get(STATUS.ACTIVE);
+}
+
+private handleEnumWithClass(): void {
+    const _key: string = Status.parseEnum('ACTIVE').key;
+    const _displayKey: string = Status.parseEnum('ACTIVE').displayValue;
+}
+
+
+
+
+
 # AngularCore
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
