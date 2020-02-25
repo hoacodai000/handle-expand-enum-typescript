@@ -11,19 +11,22 @@
   NOT_STARTED,
   PENDING_RESOLUTION,
   REJECTED
-};```
+};
+```
 
 # Handle enum
 
 ```private handleEnumWithMap(): void {
     const _key: string = STATUS[STATUS.ACTIVE];
     const _displayKey: string = STATUS_LABLE.get(STATUS.ACTIVE);
-}```
+}
+```
 
 ```private handleEnumWithClass(): void {
     const _key: string = Status.parseEnum('ACTIVE').key;
     const _displayKey: string = Status.parseEnum('ACTIVE').displayValue;
-}```
+}
+```
 
 
 
