@@ -13,7 +13,7 @@ export enum STATUS {
   REJECTED
 };
 
-# Hanle enum
+# Handle enum
 
 private handleEnumWithMap(): void {
     const _key: string = STATUS[STATUS.ACTIVE];
